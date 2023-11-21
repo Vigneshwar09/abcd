@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTRATION FORM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 1px;
+    }
+    input#email:invalid:focus{
+        border: 1px solid red;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #af4c81;
+      color: rgb(13, 13, 13);
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #savedData {
+    margin-top: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000000;
+  }
+
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h2>Registration Form</h2>
+  <form id="user" onsubmit="return validateAge()" >
+    <label for="name">NAME:</label>
+    <input type="text" id="name" name="name" required>
+  
+
+    <label for="email">EMAIL:</label>
+    <input type="email" id="email" name="email" required>
+    
+
+    <label for="password">PASSWORD:</label>
+    <input type="password" id="password" name="password" required>
+   
+     
+    <label for="dob">DATE OF BIRTH</label>
+    <input type="date" id="dob" name="dob">
+    
+    
+    <input type="checkbox" id="acceptTerms" name="acceptTerms">
+    <label for="acceptTerms">ACCEPT TERMS & CONDITIONS</label>
+   
+
+    <button type="submit">SUMBIT</button>
+  </form>
+  <div 
+    class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-908/5 sm:mx-auto s: rounded-1g sn:px-10">
+    <div class="mx-auto">
+      <h2 class="text-3x1 text-center font-bold leading-tight">ENTRIES</h2>
+      <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+</div>
+
+
+<script src="abhi.js">
+</script>
+
+</body>
+</html>
